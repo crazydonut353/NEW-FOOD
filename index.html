@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPWs</title>
+  <style>
+    body,html {
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    GPWs (general perpose websites)
+  </h1>
+  <select id="webselect" >
+    <option>emoji</option>
+    <option>dungeon-game</option>
+    <option>roller88</option>
+  </select>
+  <button id="go">go</button><br />
+  <p>
+    this is a local test site where I can test all my websites
+  </p>
+  <script>
+    var go = document.getElementById("go");
+    var webselect = document.getElementById("webselect");
+    
+    go.addEventListener("click", () => {
+        window.location.href = "./sites/" + webselect.value + "/"; 
+    })
+  </script>
+</body>
+</html>

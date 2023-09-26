@@ -1,0 +1,20 @@
+{ "columns":12,
+ "image":"bricks.db32.png",
+ "imageheight":336,
+ "imagewidth":192,
+ "margin":0,
+ "name":"dungeon",
+ "properties":[
+        {
+         "name":"empty-tile",
+         "type":"int",
+         "value":12
+        }],
+ "spacing":0,
+ "tilecount":252,
+ "tiledversion":"1.10.1",
+ "tileheight":16,
+ "tilewidth":16,
+ "type":"tileset",
+ "version":"1.10"
+}

@@ -1,0 +1,43 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "TILESET/dungeon.json",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "MAPS/1.json": {
+            "scale": 0.6231,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 312.1489327555769,
+                "y": 347.4562670518376
+            }
+        },
+        "TILESET/dungeon.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "C:/Users/nolan/github/RPG-game/TILED/TILESET",
+    "map.height": 50,
+    "map.lastUsedFormat": "json",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 50,
+    "openFiles": [
+        "TILESET/dungeon.json"
+    ],
+    "project": "rpg.tiled-project",
+    "property.type": "int",
+    "recentFiles": [
+        "TILESET/dungeon.json"
+    ],
+    "tileset.lastUsedFormat": "json",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

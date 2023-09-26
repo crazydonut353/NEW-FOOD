@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 20%;
+            padding-bottom: 20%;
+            background-color: rgb(145, 11, 11);
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
+            overflow: hidden;
+        }
+        p {
+            text-align:center;
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="e">
+        
+    </p>
+    <script>
+        
+        function getRandItem(items, length) {
+            let r=[];
+            for(let i=0;i<length;i++) {
+                r.push(items[Math.floor(Math.random() * items.length)])
+            }
+            return r.join('')
+        }
+        
+        var e = document.getElementById("e");
+        var emojis = ["✌","😂","😝","😁","😱","👉","🙌","🍻","🔥","🌈","☀","🎈","🌹","💄","🎀","⚽","🎾","🏁","😡","👿","🐻","🐶","🐬","🐟","🍀","👀","🚗","🍎","💝","💙","👌","❤","😍","😉","😓","😳","💪","💩","🍸","🔑","💖","🌟","🎉","🌺","🎶","👠","🏈","⚾","🏆","👽","💀","🐵","🐮","🐩","🐎","💣","👃","👂","🍓","💘","💜","👊","💋","😘","😜","😵","🙏","👋","🚽","💃","💎","🚀","🌙","🎁","⛄","🌊","⛵","🏀","🎱","💰","👶","👸","🐰","🐷","🐍","🐫","🔫","👄","🚲","🍉","💛","💚"];
+        var words = ["mason is an 𝓮𝓶𝓸 𝕗𝕦𝕣𝕣𝕪", "your 𝓶𝓸𝓽𝓱𝓮𝓻", `𝔦 𝔴𝔞𝔫𝔱 𝔤𝔯𝔞𝔭𝔢`, "you are 𝓫𝓻𝓮𝓪𝓽𝓱𝓽𝓪𝓴𝓲𝓷𝓰", "team fortress 𝟚", "mason is an 𝓮𝓶𝓸 𝕗𝕦𝕣𝕣𝕪"];
+        var colors = ["rgb(74, 27, 118)", "rgb(118, 27, 114)", "rgb(27, 118, 50)", "rgb(50, 27, 118)", "rgb(145, 129, 11)", "rgb(145, 78, 11)", "rgb(145, 11, 11)"]
+        
+        e.innerText = getRandItem(emojis, 3) + " " + getRandItem(words,1) + " " + getRandItem(emojis, 3);
+        document.body.style.backgroundColor = getRandItem(colors, 1)
+        
+        document.addEventListener("click", () => {
+            e.innerText = getRandItem(emojis, 3) + " " + getRandItem(words,1) + " " + getRandItem(emojis, 3);
+            document.body.style.backgroundColor = getRandItem(colors, 1);
+        })
+        
+    </script>
+</body>
+</html>
